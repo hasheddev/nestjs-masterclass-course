@@ -1,0 +1,7 @@
+request -> middeware -> guards -> interceptors -> pipes -> controllers -> interceptors -> exception filters -> response
+
+nest new project_name   nest n  name
+nest g resources name
+nest g module|controller|service|e.tc  name      nest g --help to view other names mo|co|s|e.t.c
+
+nest g middleware ---dry-run --no-spec   print output only   no test

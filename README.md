@@ -10,7 +10,7 @@ This repository contains hands-on projects, exercise modules, and architecture i
 
 ## 📖 Course Description & Overview
 
-The **Mastering NestJS** course provides an end-to-end deep dive into building enterprise-grade, scalable, and maintainable backend applications using TypeScript and Node.js. 
+The **Mastering NestJS** course provides an end-to-end deep dive into building enterprise-grade, scalable, and maintainable backend applications using TypeScript and Node.js.
 
 Key topics and concepts covered in this repository include:
 
@@ -28,7 +28,9 @@ Key topics and concepts covered in this repository include:
 This repository is structured as a monorepo containing individual NestJS projects and module exercises
 
 ## 🚀 Getting Started
+
 ### Prerequisites
+
 Ensure you have the following installed on your machine:
 
 Node.js (>=18.x)
@@ -63,9 +65,10 @@ fill in the required credentials
 
 - Start the NestJS Development Server
 
-`npm run start:dev`
+`npm run start`
 
 ## 🛠️ Built With
+
 NestJS - Progressive Node.js framework
 
 TypeScript - Typed JavaScript at Scale
