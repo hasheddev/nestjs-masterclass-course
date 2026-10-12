@@ -1,5 +1,5 @@
 import { NestFactory } from '@nestjs/core';
-import { ValidationPipe, Logger } from '@nestjs/common';
+import { ValidationPipe, Logger, VersioningType } from '@nestjs/common';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { AppModule } from './app.module';
 
@@ -29,10 +29,21 @@ async function bootstrap() {
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
+  //app.use('/docs', basicAuth())
+  //ass username and password to documentation
   SwaggerModule.setup('api', app, document);
 
   const port = process.env.PORT ?? 3000;
   await app.listen(port);
+
+  //   app.setGlobalPrefix('api');
+
+  //   // /api/v1/controller
+  //   app.enableVersioning({
+  //     type: VersioningType.URI,
+  //     prefix: 'v',
+  //     defaultVersion: '1',
+  //   });
 
   logger.log(`Application running on http://localhost:${port}`);
   logger.log(`Swagger docs at http://localhost:${port}/api`);
